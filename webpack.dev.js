@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: './src/client/index.js', // webpack start with the entry point
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
@@ -18,10 +18,12 @@ module.exports = {
         ]
     },
     plugins: [
+        // htmlWebPackPlugin look at the template file and generate a new file under filename
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
+        // CleanWebpackPlugin remove all files inside webpack's output.path directory, as well as all unused webpack assets after every successful rebuild.
         new CleanWebpackPlugin({
             // Simulate the removal of files
             dry: true,
