@@ -10,3 +10,9 @@ console.log(checkForName);
 
 alert("I EXIST")
 console.log("CHANGE!!");
+
+// export js files for using from Client library which is set up in webpack config.
+export {
+  checkForName,
+  handleSubmit
+ }
