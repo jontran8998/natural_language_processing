@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "valid-url": "^1.0.9",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   },
