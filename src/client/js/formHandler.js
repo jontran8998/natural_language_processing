@@ -17,7 +17,9 @@ function handleSubmit(event) {
     })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('results').innerHTML = res
+        Client.dataRender(res)
+    }).catch(e => {
+        console.log('Error of fetching data', e);
     })
 }
 
