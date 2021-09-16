@@ -1,4 +1,4 @@
-import { checkUrl} from './js/urlCheker'
+import { checkUrl} from './js/urlChecker'
 import { handleSubmit } from './js/formHandler'
 import { dataRender} from './js/dataRender'
 
