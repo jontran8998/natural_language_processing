@@ -1,7 +1,26 @@
+@import 'base';
+
 footer{
-  p {
-      text-align: center;
-      vertical-align: bottom;
-      padding: 25px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  background-color: $global_backgroud;
+  padding: 14px 16px;
+
+  a  {
+    color: white;
   }
+  
+  a:hover {
+    color: red;
+  }
+}
+
+.icon-item {
+  padding-left: 10px;
+}
+
+.box-1 {
+  flex: 3;
 }

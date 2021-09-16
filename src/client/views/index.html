@@ -13,34 +13,66 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+            <nav class="nav">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#">Posts</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </nav>
         </header>
 
         <main>
+            <section class="heading">
+                <h1>Natural Language Processing Project</h1>
+                <section>
+                    <h2>Article Processing: Sentiment Analysis</h2>
+                    <p>Enter a URL below to run a Sentiment Analysis on an article. The Sentiment Analysis will detect the article's subjectivity, agreement, irony, and level of confidence.</p>
+                </section>
+            </section>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="http://">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="model"></div>    
+                <table class="result">
+                    <tr>
+                        <th>Content</th>
+                        <th>Api_Return</th>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td id="model"></td>
+                    </tr>
+                    <tr>
+                        <td>Score_Tag</td>
+                        <td id="score_tag"></td>
+                    </tr>
+                    <tr>
+                        <td>Confidence</td>
+                        <td id="confidence"></td>
+                    </tr>
+                    <tr>
+                        <td>Irony</td>
+                        <td id="irony"></td>
+                    </tr>
+                </table>
+                <!-- <div id="model"></div>    
                 <div id="score_tag"></div>    
                 <div id="confidence"></div>    
-                <div id="irony"></div>    
+                <div id="irony"></div>     -->
             </section>
         </main>
 
-        <footer>
-            <p>@2021 Jon Tran</p>
-        </footer>
+        <footer>  <a class="box-1">&copy; Copyright 2021 - Jon Tran</a>
+            <a class="icon-item" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="icon-item" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="icon-item" href="#"><i class="fa fa-twitter"></i></a>
+          </footer>
         <!-- <script>
             // Check that service workers are supported
             if ('serviceWorker' in navigator) {

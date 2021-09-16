@@ -5,10 +5,10 @@ const confidence = document.getElementById('confidence');
 const irony = document.getElementById('irony');
 
 const dataRender = (response) => {
-    model.innerHTML = `Model: ${response.model}`;
-    score_tag.innerHTML = `Score-Tag: ${response.score_tag}`;
-    confidence.innerHTML = `Confidence: ${response.confidence}`;
-    irony.innerHTML = `Irony: ${response.irony}%`;
+    model.innerHTML = response.model
+    score_tag.innerHTML = response.score_tag
+    confidence.innerHTML = response.confidence
+    irony.innerHTML = response.irony
 };
 
 export { dataRender }

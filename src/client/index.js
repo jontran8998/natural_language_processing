@@ -6,7 +6,9 @@ import './styles/resets.scss'
 import './styles/base.scss'
 import './styles/footer.scss'
 import './styles/form.scss'
-import './styles/header.scss'
+import './styles/heading.scss'
+import './styles/nav.scss'
+import './styles/table.scss'
 
 // export js files for using from Client library which is set up in webpack config.
 export {
