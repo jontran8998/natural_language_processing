@@ -9,7 +9,7 @@ function handleSubmit(event) {
     } 
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8081/meaningCloud', {
+    fetch(`http://.../meaningCloud`, {
         method: 'POST',
         credentials: 'same-origin',
         headers: { 'Content-type': 'application/json' },
