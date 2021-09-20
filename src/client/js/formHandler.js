@@ -2,14 +2,14 @@ function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
-    let url = document.getElementById('name').value
+    let url = document.getElementById('url').value
     // console.log(typeOf formText);
     if (url == '' || Client.checkUrl(url) ) {
         return alert('Please enter a valid url')
     } 
 
     console.log("::: Form Submitted :::")
-    fetch(`http://.../meaningCloud`, {
+    fetch(`http://localhost:8081/meaningCloud`, {
         method: 'POST',
         credentials: 'same-origin',
         headers: { 'Content-type': 'application/json' },
