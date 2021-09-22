@@ -3,6 +3,7 @@ const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 const cors = require('cors')
 const dotenv = require('dotenv')
+const axios = require('axios')
 
 
 dotenv.config()
