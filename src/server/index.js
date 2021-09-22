@@ -36,9 +36,12 @@ app.get('/test', function (req, res) {
 app.post('/meaningCloud', async (req, res) => {
     const api_key = process.env.LICENSE_KEY
     // console.log(api_key);
-    const url = req.body.url
+    // const url = req.body.url
+    const link = req.body.url
+    console.log(link);
+    
     const result = await axios({
-        url: `https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${url}&lang=en`
+        url: `https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${link}&lang=en`
         })
         .then(res => {
             // console.log(res);
