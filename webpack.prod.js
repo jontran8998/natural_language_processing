@@ -43,6 +43,6 @@ module.exports = {
             filename: "[name].css"
         }),
 
-        // new WorkboxPlugin.GenerateSW()
+        new WorkboxPlugin.GenerateSW()
     ]
 }
